@@ -1,0 +1,83 @@
+.Resume{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(32, 32, 34);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 65px;
+    border-bottom: 1px solid rgb(4, 4, 4);
+}
+.textResume{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+   }
+   .textResume span{
+    font-size: 10px;
+    color: rgb(173, 68, 68);
+   }
+   .textResume h1{
+    font-size: 30px;
+    padding: 10px;
+    color: rgb(151, 151, 151);
+    text-align: center;
+     
+}
+.ResumeButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.ResumeButton button{
+    background-color: rgb(66, 66, 72);
+    color: rgb(209, 209, 209);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    box-shadow: 1px 1px 15px 1px rgba(87, 83, 83, 0.399);
+}
+ 
+ 
+ 
+ 
+.Education1{
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(151, 151, 151);
+    text-align: center;
+    margin-top: 20px;
+    width: 300px;
+    box-shadow: 1px 1px 15px 1px rgba(87, 83, 83, 0.399);
+}
+
+ 
+.Education1:hover{
+     color: rgb(173, 68, 68);
+}
+
+.Experience1{
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(151, 151, 151);
+    text-align: center;
+    margin-top: 20px;
+    width: 300px;
+    box-shadow: 1px 1px 15px 1px rgba(87, 83, 83, 0.399);
+}
+   
+.Experience1 span{
+    font-size: 15px;
+    padding: 8px;
+    color: rgb(173, 68, 68);
+}

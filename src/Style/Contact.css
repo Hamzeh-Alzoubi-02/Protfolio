@@ -1,0 +1,194 @@
+/* قسم الاتصال */
+.Contact {
+    display: flex;
+    flex-direction: column; /* سنبقيها عمودية هنا لتنسيق العنوان */
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(32, 32, 34);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    border-bottom: 1px solid rgb(4, 4, 4);
+}
+
+/* العنوان في قسم الاتصال */
+.textContact {
+    display: flex;
+    flex-direction: column; /* سنبقيها عمودية هنا أيضًا */
+    align-items: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.textContact span {
+    font-size: 10px;
+    color: rgb(173, 68, 68);
+}
+
+.textContact h1 {
+    font-size: 30px;
+    padding: 10px;
+    color: rgb(151, 151, 151);
+    text-align: center;
+}
+
+/* قسم تفاصيل الاتصال */
+.ContactExp {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: rgb(32, 32, 34);
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column; /* إبقاءها عمودية هنا */
+}
+
+/* العنوان داخل قسم الاتصال */
+.ContactExp h2 {
+    font-size: 24px;
+    color: rgb(196, 52, 52);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* العنوان الفرعي داخل قسم الاتصال */
+.ContactExp .title span {
+    color: rgb(173, 68, 68);
+    font-weight: bold;
+}
+
+/* النصوص العامة */
+.ContactExp p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* معلومات الاتصال */
+.ContactExp .contact-info {
+    display: flex;
+    flex-direction: row; /* اتجاه أفقي */
+    justify-content: space-between;
+    width: 100%; /* تأكد من أن العناصر تأخذ العرض بالكامل */
+    margin-bottom: 20px;
+}
+
+.ContactExp .contact-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.ContactExp .contact-info strong {
+    color: rgb(173, 68, 68);
+}
+
+/* الروابط في معلومات الاتصال */
+.ContactExp .contact-info a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(173, 68, 68, 0.6);
+    transition: border-color 0.3s ease;
+}
+
+.ContactExp .contact-info a:hover {
+    border-color: rgb(173, 68, 68);
+}
+
+/* عنوان "Find Me" */
+.ContactExp .find-me {
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    color: rgb(173, 68, 68);
+}
+
+/* تصميم أزرار الروابط الاجتماعية */
+.ContactForm {
+    display: flex;
+    flex-direction: row; /* اتجاه أفقي */
+    justify-content: space-between; /* توزيع الأزرار بالتساوي */
+    gap: 30px;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap; /* للسماح بتوزيع الأزرار على أكثر من سطر إذا كان هناك شاشة صغيرة */
+}
+
+.ContactForm div a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 12px 25px;
+    background-color: rgb(173, 68, 68);
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ContactForm div a:hover {
+    background-color: rgb(196, 52, 52);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* تأثيرات تفاعلية للأزرار عند المرور عليها */
+.ContactForm div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* تصميم الأزرار الاجتماعية مع التفاعلات */
+.ContactForm div a {
+    width: auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ContactForm div a:hover {
+    transform: scale(1.05);
+    background-color: rgb(196, 52, 52);
+}
+
+/* استعلامات الوسائط للأجهزة الصغيرة */
+@media (max-width: 768px) {
+    .ContactExp {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .textContact h1 {
+        font-size: 25px;
+    }
+
+    .ContactForm div a {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .ContactForm {
+        flex-direction: row; /* تغيير إلى عمودي في الشاشات الصغيرة */
+    }
+}
+
+@media (max-width: 480px) {
+    .ContactExp {
+        width: 95%;
+    }
+
+    .textContact h1 {
+        font-size: 22px;
+    }
+
+    .ContactForm div a {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .ContactForm {
+        flex-direction: row; /* تغيير الأزرار إلى اتجاه عمودي في الشاشات الصغيرة */
+    }
+}
