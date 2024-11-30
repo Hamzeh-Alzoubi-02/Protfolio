@@ -10,7 +10,7 @@ export default function Contact() {
                 <h2>Hamzah Alzubi</h2>
                 <p className="title"><span>FrontEnd Developer</span></p>
                 <p>FrontEnd developer
-                I am available for freelance work. Connect with me via and call in to my account.</p>
+                I am available for freelance work. Connect with me via or call in to my account.</p>
 
                 <div className="contact-info">
                     <p><strong>Phone:</strong> <a href="tel:+962796277367">0796277367</a></p>
